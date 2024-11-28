@@ -1,3 +1,7 @@
+
+//Written by Angel Chikumbirike
+// angelchikumbirike@gmail.com
+
 $(document).ready(function () {
      // Add a custom validation method to check if start value is less than or equal to the end value
      $.validator.addMethod(
