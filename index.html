@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Multiplication Table</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Interactive Multiplication Table</h1>
+  <form id="multiplication-form">
+    <div class="input-container">
+      <label for="start-horiz">Starting Number (Horizontal): <span class="required">*</span></label>
+      <input type="number" id="start-horiz" name="startHoriz" />
+    </div>
+    <div class="input-container">
+      <label for="end-horiz">Ending Number (Horizontal): <span class="required">*</span></label>
+      <input type="number" id="end-horiz" name="endHoriz" />
+    </div>
+    <div class="input-container">
+      <label for="start-vert">Starting Number (Vertical): <span class="required">*</span></label>
+      <input type="number" id="start-vert" name="startVert" />
+    </div>
+    <div class="input-container">
+      <label for="end-vert">Ending Number (Vertical): <span class="required">*</span></label>
+      <input type="number" id="end-vert" name="endVert" />
+    </div>  
+    <button type="submit">Generate Table</button>
+</form>
+<div id="error-message"></div>
+<div id="table-container"></div>
+</body>
+</html>
